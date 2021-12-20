@@ -16,4 +16,5 @@ cd KJDE
 cp kjde.tar.gz ~/kjde.tar.gz
 cd
 tar -xvzf kjde.tar.gz
+cd dotfiles/
 sh install.sh
