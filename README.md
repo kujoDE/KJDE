@@ -1,5 +1,5 @@
 # KJDE
-Kujonello's Desktop Environment
+Kujonello's Desktop Environment (Probably works)
 
 	KJDE automatic installation for arch based distros
 	!IMPORTANT! Please install yay aur helper before installing!
