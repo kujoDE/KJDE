@@ -18,3 +18,5 @@ Kujonello's Desktop Environment (Probably works)
 	tar -xvzf kjde.tar.gz
 	cd dotfiles/
 	sh install.sh
+	
+	!IF U USE DOAS! use install-doas.sh instead of install.sh
