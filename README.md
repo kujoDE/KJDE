@@ -20,5 +20,3 @@ Kujonello's Desktop Environment (Probably works)
 	sudo sh install.sh
 		or
 	doas sh install.sh
-
-PLS ignore install-doas.sh
