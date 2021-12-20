@@ -2,8 +2,8 @@
 Kujonello's Desktop Environment (Probably works)
 
 	KJDE automatic installation for arch based distros
-	!IMPORTANT! Please install yay aur helper before installing!
-	!IMPORTANT! Please use this script ONLY on clean install!
+
+	Prob works
 
 	Btw unpack everything to your home directory ;)
 
