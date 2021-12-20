@@ -19,7 +19,6 @@ Kujonello's Desktop Environment (Probably works)
 	cd dotfiles/
 	sudo sh install.sh
 		or
-	doas sh install-doas.sh
-	
-		^
-You can probably run it without sudo/doas, but I strongly recommend doing it with it
+	doas sh install.sh
+
+PLS ignore install-doas.sh
