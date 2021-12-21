@@ -13,16 +13,16 @@ echo
 echo ---------------------------------------------------------------------------------------------------------
 echo
 echo
-
-while true; do
-	    read -p "Do you wish to proceed? y/n " yn
-	        case $yn in
-			        [Yy]* ) make install; break;;
-				        [Nn]* ) exit;;
-					        * ) echo "Please answer yes or no.";;
-						    esac
-					    done
-
+;
+;while true; do
+;	    read -p "Do you wish to proceed? y/n " yn
+;	        case $yn in
+;			        [Yy]* ) make install; break;;
+;				        [Nn]* ) exit;;
+;					        * ) echo "Please answer yes or no.";;
+;						    esac
+;					    done
+;
 #Yes/No yoinked from stackoverflow
 
 mkdir ~/.config
