@@ -42,7 +42,6 @@ yay -Sy
                                         2 ) yay -S pulseaudio; break;;
                                         * ) echo "Please answer 1/2.";;
                                                             esac
-done
 
 #Pipewire/Pulse
 
@@ -52,7 +51,6 @@ done
                                         4 ) echo ok; break;;
                                         * ) echo "Please answer 3/4.";;
                                                             esac
-done
 
 #Cmatrix
 
@@ -67,8 +65,6 @@ done
                                         11 ) echo ok; break;;
                                         * ) echo "Please answer 5/6/7/8/9/10/11";;
                                                             esac
-done
-
 #FileManager
 
                         read -p "Which terminal emulator would you like to install? alacritty (12), st (13), kitty (14), xfce4-termianl (15), none (16)" TERMINAL
@@ -80,7 +76,6 @@ done
                                         16 ) echo ok; break;;
                                         * ) echo "Please answer 12/13/14/15/16";;
                                                             esac
-done
 
 echo Installing window manager, app launcher, xorg etc.
 yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh nerd-fonts-complete
