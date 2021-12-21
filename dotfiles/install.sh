@@ -41,11 +41,11 @@ yay -Syy pipewire-alsa pipewire pipewire-pulse pipewire-jack bspwm alacritty cav
 
 #Installing required packages
 
-cp -r ~/dotfiles/config/* ~/.config
-sudo cp ~/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
-doas cp ~/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
-cp ~/dotfiles/kjde.sh ~/kjde.sh
-cp ~/dotfiles/wallp.jpg ~/Pictures/wallp.jpg
+cp -r ~/KJDE/dotfiles/config/* ~/.config
+sudo cp ~/KJDE/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
+doas cp ~/KJDE/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
+cp ~/KJDE/dotfiles/kjde.sh ~/kjde.sh
+cp ~/KJDE/dotfiles/wallp.jpg ~/Pictures/wallp.jpg
 echo "exec ~/kjde.sh" >> ~/.xinitrc
 
 #Coping files to created before directories 
