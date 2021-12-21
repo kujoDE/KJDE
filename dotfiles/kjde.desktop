@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=KJDE
+Comment=Kujonello's Desktop Environment
+Icon=
+Exec=~/kjde.sh
+
