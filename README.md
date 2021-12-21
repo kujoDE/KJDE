@@ -1,20 +1,22 @@
 # KJDE
 Kujonello's Desktop Environment (Probably works)
 
-	KJDE automatic installation for arch based distros
+KJDE automatic installation for arch based distros
 
-	Prob works
+How to install:
+```bash
+git clone https://github.com/kujonello79/KJDE.git
+cd KJDE
+cd dotfiles/
+sh install.sh
+```
+<details> <summary> <b> Preview screenshots </b> </summary>
 
-	Btw unpack everything to your home directory ;)
+![preview](preview.png)
+![preview2](preview2.png)
+![previe3](preview3.png)
 
-	If something doesn't work dm me on discord:
-	Kujonello#3793
-
-	Instructions:
-	git clone https://github.com/kujonello79/KJDE.git
-	cd KJDE
-	cp kjde.tar.gz ~/kjde.tar.gz
-	cd
-	tar -xvzf kjde.tar.gz
-	cd dotfiles/
-	sh install.sh
+</details>
+If something doesn't work dm us on discord:
+Kujonello#3793,
+uQlel#9256
