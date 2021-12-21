@@ -24,7 +24,6 @@ while true; do
 					    done
 
 #Yes/No yoinked from stackoverflow
-
 mkdir ~/.config
 mkdir ~/Pictures
 
@@ -77,15 +76,49 @@ yay -Sy
                                         * ) echo "Please answer 12/13/14/15/16";;
                                                             esac
 
-echo Installing window manager, app launcher, xorg etc.
-yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh nerd-fonts-complete
+#Terminal
 
+                        read -p "Would you like to install Nerd Fonts? This package is required to run pre-installed polybar config. Yes (17), No (18)" NERD
+                            case $NERD in
+                                        17 ) yay -S nerd-fonts-complete; break;;
+                                        18 ) echo ok; break;;
+                                        * ) echo "Please answer 17/18.";;
+                                                            esac
+
+#NerdFonts
+
+                        read -p "Would you like to install web browser? Librewolf (19), Firefox (20), Ungoogled Chromium (21), Vivaldi (22), Epiphany (23), Falkon (24), None (25)" WEB
+                            case $WEB in
+                                        19 ) yay -S librewolf; break;;
+                                        20 ) yay -S firefox; break;;
+                                        21 ) yay -S ungoogled-chromium; break;;
+                                        22 ) yay -S vivaldi; break;;
+					23 ) yay -S epiphany; break;;
+					24 ) yay -S falkon; break;;
+					25 ) echo ok; break;;
+					* ) echo "Please answer 19/20/21/22/23/24/25.";;
+                                                            esac
+
+#WebBrowser
+
+
+
+#Adding audio on startup WIP
+
+echo Installing window manager, app launcher, xorg etc.
+yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh
+echo Installation complete!
 
 #Installing required packages
 
 cp -r ~/KJDE/dotfiles/config/* ~/.config
+
 sudo cp ~/KJDE/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
 doas cp ~/KJDE/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
+echo Desktop entry for DE coppied!
+
+#Detecting sudo/doas WIP
+
 cp ~/KJDE/dotfiles/kjde.sh ~/kjde.sh
 cp ~/KJDE/dotfiles/wallp.jpg ~/Pictures/wallp.jpg
 echo "exec ~/kjde.sh" >> ~/.xinitrc
