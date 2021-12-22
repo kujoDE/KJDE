@@ -14,6 +14,8 @@ echo ---------------------------------------------------------------------------
 echo
 echo
 
+
+
 while true; do
 	    read -p "Do you wish to proceed? y/n " yn
 	        case $yn in
@@ -22,6 +24,8 @@ while true; do
 					        * ) echo "Please answer yes or no.";;
 						    esac
 					    done
+
+if which yay | grep -q '/yay'; then
 
 #Yes/No yoinked from stackoverflow
 mkdir ~/.config
@@ -137,5 +141,5 @@ echo x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x
 
 
 #End
-
+fi
 
