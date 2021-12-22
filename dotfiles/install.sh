@@ -25,25 +25,37 @@ while true; do
 						    esac
 					    done
 
-if which doas | grep -q '/doas'; then
 sudo pacman -S --noconfirm base-devel
-sudo pacman -S --noconfirm git
-cd git
-sudo git clone https://aur.archlinux.org/yay.git
-sudo chown -R $USER:$USER ./yay
-cd yay
-makepkg -si
-fi
-
-if which sudo | grep -q '/sudo'; then
 doas pacman -S --noconfirm base-devel
+sudo pacman -S --noconfirm git
 doas pacman -S --noconfirm git
 cd git
+sudo git clone https://aur.archlinux.org/yay.git
 doas git clone https://aur.archlinux.org/yay.git
+sudo chown -R $USER:$USER ./yay
 doas chown -R $USER:$USER ./yay
-cd yay
 makepkg -si
-fi
+
+
+#if which doas | grep -q '/doas'; then
+#sudo pacman -S --noconfirm base-devel
+#sudo pacman -S --noconfirm git
+#cd git
+#sudo git clone https://aur.archlinux.org/yay.git
+#sudo chown -R $USER:$USER ./yay
+#cd yay
+#makepkg -si
+#fi
+#
+#if which sudo | grep -q '/sudo'; then
+#doas pacman -S --noconfirm base-devel
+#doas pacman -S --noconfirm git
+#cd git
+#doas git clone https://aur.archlinux.org/yay.git
+#doas chown -R $USER:$USER ./yay
+#cd yay
+#makepkg -si
+#fi
 
 #Yes/No yoinked from stackoverflow
 mkdir ~/.config
