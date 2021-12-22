@@ -52,8 +52,8 @@ yay -Sy
 
                         read -p "Do you want to install pipewire(1) or pulseaudio(2)? 1/2 " AUDIO
                             case $AUDIO in
-                                        1 ) yay -S pipewire pipewire-pulse; break;;
-                                        2 ) yay -S pulseaudio; break;;
+                                        1 ) yay -S pipewire pipewire-pulse pavucontrol alsamixer; break;;
+                                        2 ) yay -S pulseaudio pavucontrol alsamixer; break;;
                                         * ) echo "Please answer 1/2.";;
                                                             esac
 
@@ -118,7 +118,12 @@ yay -Sy
 
 
 
-#Adding audio on startup WIP
+#Adding audio on startup
+systemctl enable pulseaudio
+systemctl start pulseaudio
+rc-service start pulseaudio
+rc-service add pulseaudio
+#Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
 yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh
