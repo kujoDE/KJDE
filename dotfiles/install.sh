@@ -26,7 +26,7 @@ while true; do
 					    done
 
 
-if which doas | grep -q '/doas'; then
+if which sudo | grep -q '/sudo'; then
 sudo pacman -S --noconfirm base-devel
 sudo pacman -S --noconfirm git
 cd git
