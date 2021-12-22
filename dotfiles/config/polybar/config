@@ -17,13 +17,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-;background = #282828
 background = #1b1b1b
-;background = #00
 background-alt = #1b1b1b
-;background-alt = #282828
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #458588
 primary = #cc241d
@@ -35,56 +30,6 @@ alert = #458588
 4 = #cc241d 
 white = #eddeb8
 
-[bar/example]
-enable-ipc=true
-width = 100%
-height = 30
-radius = 6.0
-fixed-center = true 
-module-margin = 2
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 1
-line-color = #cc241d
-
-border-size = 4
-border-color = #00000000
-
-padding-left = 2
-padding-right = 2
-
-module-margin-left = 2
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "NotoSans Nerd Font:style=2048-em:size=10;1"
-
-modules-left = arch filesystem
-modules-right = pulseaudio date cpu memory
-modules-center = bspwm
-
-tray-position = none
-		tray-padding = 2
-tray-detached = false
-;tray-background = #0063ff
-
-wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-cursor-click = pointer
-cursor-scroll = ns-resize
-
 [bar/left]
 enable-ipc=true
 width = 7%
@@ -94,30 +39,22 @@ height = 30
 radius = 6.0
 fixed-center = false
 module-margin = 2
-
 background = ${colors.background}
 foreground = ${colors.foreground}
-
 line-size = 1
 line-color = #cc241d
-
 border-size = 4
 border-color = #00000000
-
 padding-left = 2
 padding-right = 2
-
 module-margin-left = 2
 module-margin-right = 2
-
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "NotoSans Nerd Font:style=2048-em:size=10;1"
-
 modules-left = 
 modules-right = 
 modules-center = bspwm
-
 tray-position = none
                 tray-padding = 2
 tray-detached = false
@@ -132,151 +69,26 @@ height = 30
 radius = 6.0
 fixed-center = false
 module-margin = 2
-
 background = ${colors.background}
 foreground = ${colors.foreground}
-
 line-size = 1
 line-color = #cc241d
-
 border-size = 4
 border-color = #00000000
-
 padding-left = 2
 padding-right = 2
-
 module-margin-left = 2
 module-margin-right = 2
-
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "NotoSans Nerd Font:style=2048-em:size=10;1"
-
 modules-left =
 modules-right = pulseaudio date cpu memory
 modules-center = 
-
 tray-position = none
                 tray-padding = 2
 tray-detached = false
 ;tray-background = #0063ff
-
-[bar/center]
-enable-ipc=true
-width = 15%
-offset-x = 84.8%
-height = 30
-radius = 6.0
-fixed-center = false
-module-margin = 2
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 1
-line-color = #cc241d
-
-border-size = 4
-border-color = #00000000
-
-padding-left = 2
-padding-right = 2
-
-module-margin-left = 2
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "NotoSans Nerd Font:style=2048-em:size=10;1"
-
-modules-left =
-modules-right = pulseaudio date cpu memory
-modules-center =
-
-tray-position = none
-                tray-padding = 2
-tray-detached = false
-;tray-background = #0063ff
-
-
-[module/explorer]
-type = custom/text
-;content = 
-content = 
-content-padding = 1
-content-margin = 1
-;content-foreground = ${colors.fg}
-;content-underline = ${colors.adapta-cyan}
-click-left = thunar
-content-underline = ${colors.1}
-
-[module/web]
-type = custom/text
-content = 
-content-padding = 1
-content-margin = 1
-click-left = librewolf
-content-underline = ${colors.2}
-
-[module/space]
-type = custom/text
-content = 
-content-padding = 1
-content-margin = 1
-click-left = 
-
-[module/terminal]
-type = custom/text
-content = 
-content-padding = 1
-content-margin = 1
-click-left = alacritty
-content-underline = ${colors.3}
-
-[module/spotify]
-type = custom/text
-content = 阮
-content-padding = 1
-content-margin = 1
-click-left = LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify
-content-underline = ${colors.4}
-
-[module/kujonello]
-type = custom/text
-content = Kujonello
-content-padding = 1
-content-margin = 1
-content-foreground = #ffffff
-click-left = librewolf https://kujonello.tk:8006/
-
-[module/separator]
-type = custom/text
-content = |
-content-padding = 1
-content-margin = 1
-content-foreground = #ffffff
-click-left = 
-
-[module/arch]
-type = custom/text
-content =   
-content-padding = 1
-content-margin = 1
-content-foreground = #0b8db5
-click-left = librewolf https://artixlinux.org   
-
-[module/round-left]
-type = custom/text
-
-content = %{T3}%{T-}
-content-foreground = ${colors.4}
-
-[module/round-right]
-type = custom/text
-
-content = %{T3}%{T-}
-content-foreground = ${colors.4}
-
 
 [module/example]
 label-active = %token%
@@ -357,44 +169,6 @@ label-empty-foreground = ${colors.white}
 
 ; Separator in between workspaces
 ; label-separator = |
-
-[module/i3]
-type = internal/i3
-format = <label-state> <label-mode>
-index-sort = true
-wrapping-scroll = false
-
-; Only show workspaces on the same output as the bar
-;pin-workspaces = true
-
-label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.primary}
-
-; focused = Active workspace on focused monitor
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
-
-; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%
-label-unfocused-padding = 2
-
-; visible = Active workspace on unfocused monitor
-label-visible = %index%
-label-visible-background = ${self.label-focused-background}
-label-visible-underline = ${self.label-focused-underline}
-label-visible-padding = ${self.label-focused-padding}
-
-; urgent = Workspace with urgency hint set
-label-urgent = %index%
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
-
-; Separator in between workspaces
-label-separator = |
-
 
 [module/mpd]
 type = internal/mpd
