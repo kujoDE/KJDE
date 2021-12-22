@@ -6,9 +6,9 @@ echo ---------------------------------------------------------------------------
 echo
 echo KJDE automatic installation for arch based distros
 echo
-echo !IMPORTANT! Please install yay aur helper before installing! Scipt will install pkgs from AUR! !IMPORTANT!
 echo !IMPORTANT! Please use this script ONLY on clean install or backup your configs, recommended! !IMPORTANT!
 echo !IMPORTANT! Dont run with sudo/doas/as root! Script will install KJDE under /, borked install! !IMPORTANT!
+echo !IMPORTANT! CONFIGURE SUDO/DOAS BEFORE INSTALLING! THE SCRIPT WILL USE IT TO INSTALL YAY !IMPORTANT ASFUCK!
 echo
 echo ---------------------------------------------------------------------------------------------------------
 echo
@@ -26,23 +26,17 @@ while true; do
 					    done
 
 
-if which sudo | grep -q '/sudo'; then
 sudo pacman -S --noconfirm base-devel
-sudo pacman -S --noconfirm git
-cd git
-sudo git clone https://aur.archlinux.org/yay.git
-sudo chown -R $USER:$USER ./yay
-cd yay
-makepkg -si
-else 
 doas pacman -S --noconfirm base-devel
+sudo pacman -S --noconfirm git
 doas pacman -S --noconfirm git
 cd git
+sudo git clone https://aur.archlinux.org/yay.git
 doas git clone https://aur.archlinux.org/yay.git
+sudo chown -R $USER:$USER ./yay
 doas chown -R $USER:$USER ./yay
 cd yay
 makepkg -si
-fi
 
 #Yes/No yoinked from stackoverflow
 mkdir ~/.config
