@@ -116,6 +116,9 @@ echo Installation complete!
 #Installing required packages
 
 cp -r ~/KJDE/dotfiles/config/* ~/.config
+chmod 777 ~/.config/bspwm/bspwmrc
+chmod 777 ~/.config/sxhkd/sxhkdrc
+chmod 777 ~/.config/polybar/launch.sh
 
 sudo cp ~/KJDE/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
 doas cp ~/KJDE/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
