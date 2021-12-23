@@ -120,6 +120,26 @@ yay  --noconfirm -Sy
 
 #WebBrowser
 
+                        read -p "Would you like to install Libre Office? Yes (26), No (27)   " OFFICE
+                            case $OFFICE in
+                                        26 ) yay -S libreoffice-fresh; break;;
+                                        27 ) echo ok; break;;
+                                        * ) echo "Please answer 26/27.";;
+                                                            esac
+
+#LibreOffice
+
+
+                        read -p "Which text editor would you like to install? Nano (28), Vim (29), Emacs (30), Gedit (31), none (32)  " TEXT
+                            case $TEXT in
+                                        28 ) yay -S nano; break;;
+                                        29 ) yay -S vim; break;;
+					30 ) yay -S emacs; break;;
+					31 ) yay -S gedit; break;;
+					32 ) echo ok; break;;
+                                        * ) echo "Please answer 28/29/30/31/32.";;
+                                                            esac
+
 
 
 #Adding audio on startup
