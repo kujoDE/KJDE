@@ -1,8 +1,5 @@
 #!/bin/sh
-bspwm &&
-sxhkd &&
-polybar left && 
-polybar right && 
+exec bspwm &&
+exec sxhkd &&
 setkbmap pl && 
-feh --bg-fill ~/Pictures/wallp.png &&
 picom -b &&
