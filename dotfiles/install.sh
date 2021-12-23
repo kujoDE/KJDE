@@ -146,6 +146,7 @@ echo Desktop entry for DE coppied!
 cp ~/KJDE/dotfiles/kjde.sh ~/kjde.sh
 cp ~/KJDE/dotfiles/wallp.jpg ~/Pictures/wallp.jpg
 echo "exec ~/kjde.sh" >> ~/.xinitrc
+chmod 777 ~/kjde.sh
 
 #Coping files to created before directories 
 #And creating .xinitrc file
