@@ -122,8 +122,8 @@ yay  --noconfirm -Sy
 #Adding audio on startup
 systemctl enable pulseaudio
 systemctl start pulseaudio
-rc-service start pulseaudio
-rc-service add pulseaudio
+rc-service pulseaudio start
+rc-service pulseaudio add boot
 #Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
