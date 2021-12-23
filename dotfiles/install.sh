@@ -51,11 +51,12 @@ yay  --noconfirm -Sy
 
 #Updating repositories
 
-                        read -p "Do you want to install pipewire(1) or pulseaudio(2)? 1/2   " AUDIO
+                        read -p "Do you want to install pipewire(1) or pulseaudio(2)? If you dont want to have audio pick (0)! 0/1/2   " AUDIO
                             case $AUDIO in
-                                        1 ) yay  --noconfirm -S pipewire pipewire-pulse pavucontrol alsamixer; break;;
-                                        2 ) yay  --noconfirm -S pulseaudio pavucontrol alsamixer; break;;
-                                        * ) echo "Please answer 1/2.";;
+			                0 ) echo hardcore option btw, respect; break;;
+                                        1 ) yay  --noconfirm -S pipewire pipewire-pulse pavucontrol; break;;
+                                        2 ) yay  --noconfirm -S pulseaudio pavucontrol; break;;
+                                        * ) echo "Please answer 0/1/2.";;
                                                             esac
 
 #Pipewire/Pulse
@@ -127,7 +128,7 @@ rc-service pulseaudio add boot
 #Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
-yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh
+yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance
 echo Installation complete!
 
 #Installing required packages
@@ -157,6 +158,9 @@ echo Installation complete!
 echo
 echo If you want to install display manager, do it now
 echo If not, use startx command instead, recommended
+echo
+echo Thanks for downloading!
+echo - KJDE team
 echo
 echo x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x
 
