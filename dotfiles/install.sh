@@ -141,12 +141,21 @@ yay  --noconfirm -Sy
                                                             esac
 
 
+                        read -p "Would you like to install all-repository-fonts package? yes, recommended (32) no (33)  " FOXT
+                            case $FOXT in
+                                        32 ) yay -S all-repository-fonts; break;;
+                                        33 ) echo ok; break;;
+                                        * ) echo "Please answer 32/33.";;
+                                                            esac
+
+
+
 
 #Adding audio on startup
-systemctl enable pulseaudio
-systemctl start pulseaudio
-rc-service pulseaudio start
-rc-service pulseaudio add boot
+su -c systemctl enable pulseaudio
+su -c systemctl start pulseaudio
+su -c rc-service pulseaudio start
+su -c rc-update add pulseaudio boot
 #Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
@@ -178,15 +187,27 @@ echo x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x
 echo
 echo Installation complete!
 echo
-echo If you want to install display manager, do it now
-echo If not, use startx command instead, recommended
+echo Install lightdm bellow, or install other manually
+echo 
+echo Alternatively use startx command instead
 echo
 echo Thanks for downloading!
 echo - KJDE team
 echo
 echo x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x
 
+                        read -p "Would you like to install ligtdm display manager? OPTIONAL! yes (34), yes but openrc version (35), no (36)  " FOXT
+                            case $FOXT in
+                                        34 ) yay -S lightdm lightdm-greeter; break;;
+					35 ) yay -S lightdm lightdm-greeter lightdm-openrc;break;;
+                                        36 ) exit; break;;
+                                        * ) echo "Please answer 32/33.";;
+                                                            esac
 
+
+su -c systemctl enable lightdm
+su -c rc-update add lightdm boot
+echo Lightdm installed succesfully!
 #End
 
 
