@@ -50,7 +50,7 @@ yay -Sy
 
 #Updating repositories
 
-                        read -p "Do you want to install pipewire(1) or pulseaudio(2)? 1/2 " AUDIO
+                        read -p "Do you want to install pipewire(1) or pulseaudio(2)? 1/2   " AUDIO
                             case $AUDIO in
                                         1 ) yay -S pipewire pipewire-pulse pavucontrol alsamixer; break;;
                                         2 ) yay -S pulseaudio pavucontrol alsamixer; break;;
@@ -59,7 +59,7 @@ yay -Sy
 
 #Pipewire/Pulse
 
-                        read -p "Do you want to install terminal application like cmatrix?(3), no?(4) " STUFF
+                        read -p "Do you want to install terminal application like cmatrix?(3), no?(4)   " STUFF
                             case $STUFF in
                                         3 ) yay -S cava cmatrix htop ; break;;
                                         4 ) echo ok; break;;
@@ -68,7 +68,7 @@ yay -Sy
 
 #Cmatrix
 
-                        read -p "Which File Manager would you like to install? pcmanfm (5), nautilus (6), dolphin (7), ranger (8), fff (9), nemo (10) or none (11)" FM
+                        read -p "Which File Manager would you like to install? pcmanfm (5), nautilus (6), dolphin (7), ranger (8), fff (9), nemo (10) or none (11)   " FM
                             case $FM in
                                         5 ) yay -S pcmanfm ; break;;
                                         6 ) yay -S nautilus; break;;
@@ -81,7 +81,7 @@ yay -Sy
                                                             esac
 #FileManager
 
-                        read -p "Which terminal emulator would you like to install? alacritty (12), st (13), kitty (14), xfce4-termianl (15), none (16)" TERMINAL
+                        read -p "Which terminal emulator would you like to install? alacritty (12), st (13), kitty (14), xfce4-termianl (15), none (16)   " TERMINAL
                             case $TERMINAL in
                                         12 ) yay -S alacritty; break;;
                                         13 ) yay -S st; break;;
@@ -93,7 +93,7 @@ yay -Sy
 
 #Terminal
 
-                        read -p "Would you like to install Nerd Fonts? This package is required to run pre-installed polybar config. Yes (17), No (18)" NERD
+                        read -p "Would you like to install Nerd Fonts? This package is required to run pre-installed polybar config. Yes (17), No (18)   " NERD
                             case $NERD in
                                         17 ) yay -S nerd-fonts-complete; break;;
                                         18 ) echo ok; break;;
@@ -102,7 +102,7 @@ yay -Sy
 
 #NerdFonts
 
-                        read -p "Would you like to install web browser? Librewolf (19), Firefox (20), Ungoogled Chromium (21), Vivaldi (22), Epiphany (23), Falkon (24), None (25)" WEB
+                        read -p "Would you like to install web browser? Librewolf (19), Firefox (20), Ungoogled Chromium (21), Vivaldi (22), Epiphany (23), Falkon (24), None (25)   " WEB
                             case $WEB in
                                         19 ) yay -S librewolf; break;;
                                         20 ) yay -S firefox; break;;
@@ -140,7 +140,7 @@ sudo cp ~/KJDE/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
 doas cp ~/KJDE/dotfiles/kjde.desktop /usr/share/xsessions/kjde.desktop
 echo Desktop entry for DE coppied!
 
-#Detecting sudo/doas WIP
+#WIP
 
 cp ~/KJDE/dotfiles/kjde.sh ~/kjde.sh
 cp ~/KJDE/dotfiles/wallp.jpg ~/Pictures/wallp.jpg
