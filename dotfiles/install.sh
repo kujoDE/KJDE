@@ -2,18 +2,19 @@
 
 echo
 echo
-echo ---------------------------------------------------------------------------------------------------------
+echo -------------------------------------------------------------------------------------------------------------------------------------------
 echo
-echo KJDE automatic installation for arch based distros
+echo KJDE automatic installation for Arch based Linux distros
 echo
-echo !IMPORTANT! Please use this script ONLY on clean install or backup your configs, recommended!      !IMPORTANT!
-echo !IMPORTANT! Dont run with sudo/doas/as root! Script will install KJDE under /, borked install!     !IMPORTANT!
-echo !IMPORTANT! CONFIGURE SUDO/DOAS BEFORE INSTALLING! THE SCRIPT WILL USE IT TO INSTALL YAY    !IMPORTANT ASFUCK!
-echo !IMPORTANT! Ignore error command not found sudo/doas! If you have one of those programs installed! !IMPORTANT!
+echo !IMPORTANT! Please use this script ONLY on clean install or backup your configs, recommended!------------------------------------!IMPORTANT!
+echo !IMPORTANT! Dont run with sudo/doas/as root! Script will install KJDE under /, borked install!-----------------------------------!IMPORTANT!
+echo !IMPORTANT! CONFIGURE SUDO/DOAS BEFORE INSTALLING! THE SCRIPT WILL USE IT TO INSTALL YAY AUR HELPER!-----------------------------!IMPORTANT!
+echo !IMPORTANT! Ignore error command not found sudo/doas! If you have one of those programs installed!-------------------------------!IMPORTANT!
+echo !IMPORTANT! Only systemd and openrc are supported by us! If you have another innit, you will need to enable audio by yourself!---!IMPORTANT!
 echo
-echo ---------------------------------------------------------------------------------------------------------
+echo -------------------------------------------------------------------------------------------------------------------------------------------
 echo
-echo
+echo Github.com/kujoDE/KJDE
 
 
 
