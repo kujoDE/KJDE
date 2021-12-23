@@ -6,9 +6,10 @@ echo ---------------------------------------------------------------------------
 echo
 echo KJDE automatic installation for arch based distros
 echo
-echo !IMPORTANT! Please use this script ONLY on clean install or backup your configs, recommended! !IMPORTANT!
-echo !IMPORTANT! Dont run with sudo/doas/as root! Script will install KJDE under /, borked install! !IMPORTANT!
-echo !IMPORTANT! CONFIGURE SUDO/DOAS BEFORE INSTALLING! THE SCRIPT WILL USE IT TO INSTALL YAY !IMPORTANT ASFUCK!
+echo !IMPORTANT! Please use this script ONLY on clean install or backup your configs, recommended!      !IMPORTANT!
+echo !IMPORTANT! Dont run with sudo/doas/as root! Script will install KJDE under /, borked install!     !IMPORTANT!
+echo !IMPORTANT! CONFIGURE SUDO/DOAS BEFORE INSTALLING! THE SCRIPT WILL USE IT TO INSTALL YAY    !IMPORTANT ASFUCK!
+echo !IMPORTANT! Ignore error command not found sudo/doas! If you have one of those programs installed! !IMPORTANT!
 echo
 echo ---------------------------------------------------------------------------------------------------------
 echo
