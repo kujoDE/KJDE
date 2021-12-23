@@ -159,7 +159,7 @@ su -c rc-update add pulseaudio boot
 #Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
-yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance
+yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance papirus-icon-theme-git
 echo Installation complete!
 
 #Installing required packages
