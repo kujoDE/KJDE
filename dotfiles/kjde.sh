@@ -2,4 +2,4 @@
 exec bspwm &&
 exec sxhkd &&
 setkbmap pl && 
-picom -b &&
+picom -b 
