@@ -1,7 +1,8 @@
 # KJDE
-## Kujonello's Desktop Environment (Probably works) [WIP]
+## Kujonello's Desktop Environment (works) [WIP]
 
 KJDE automatic installation for arch based distros
+SystemD and OpenRC supported! (for other innit systems you will need to start some services by yourself)
 
 How to install:
 1.  Install arch-based distro without GUI (<a href="https://artixlinux.org">Artix Linux </a> is recommended)
@@ -9,7 +10,7 @@ How to install:
 3. Install and configure [sudo](https://wiki.archlinux.org/title/Sudo) </a> or [doas](https://wiki.archlinux.org/title/Doas) (doas recommended)
 4. Ensure you are connected to Internet (`ping artixlinux.org`)
 5. Install bash and curl packets (`pacman -Syu bash curl`)
-6. Execute install command `curl dl.kjde.tk | bash`
+6. Execute install command `curl dl.kjde.tk | bash` or `git clone https://github.com/kujoDE/KJDE.git cd KJDE/dotfiles sh install.sh`
 7. Enter password when prompted, wait until it finish
 8. Reboot
 
@@ -23,3 +24,5 @@ How to install:
 If something doesn't work dm us on discord:
 Kujonello#3793,
 uQlel#9256
+
+NOTE: Polybar is bugged, it's AUR's problem ;(
