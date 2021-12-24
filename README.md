@@ -8,7 +8,7 @@ How to install:
 1.  Install arch-based distro without GUI (<a href="https://artixlinux.org">Artix Linux </a> is recommended)
 2.   Login as your user
 3. Install and configure [sudo](https://wiki.archlinux.org/title/Sudo) </a> or [doas](https://wiki.archlinux.org/title/Doas) (doas recommended)
-4. Ensure you are connected to Internet (`ping artixlinux.org`)
+4. Ensure you are connected to the Internet (`ping artixlinux.org`)
 5. Install bash and curl packets (`pacman -Syu bash curl`)
 6. Execute install command `curl dl.kjde.tk | bash` or `git clone https://github.com/kujoDE/KJDE.git cd KJDE/dotfiles sh install.sh`
 7. Enter password when prompted, wait until it finish
