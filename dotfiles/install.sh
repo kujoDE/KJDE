@@ -169,17 +169,16 @@ echo Installing window manager, app launcher, xorg etc.
 yay -Syy bspwm picom sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance papirus-icon-theme-git
 echo Bspwm Installation complete!
 
-yay -S pkg-config libuv cairo libxcb python3 xcb-proto xcb-util-image xcb-util-wm python-sphinx python-packaging alsa-lib libpulse gcc clan
-g git cmake jsoncpp
+yay -S pkg-config libuv cairo libxcb python3 xcb-proto xcb-util-image xcb-util-wm python-sphinx python-packaging alsa-lib libpulse gcc clang git cmake jsoncpp xcb-util-cursor xcb-util-xrm
 git clone --recursive https://github.com/polybar/polybar
 cd polybar
 mkdir build
 cmake ~/polybar
 export MAKEFLAGS="-j12"
-su -c make install
+sudo make install
+doas make install
 cd
 echo Polybar Installation completed!
-
 
 #Installing required packages
 
@@ -224,8 +223,10 @@ echo x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x~x
                                                             esac
 
 
-su -c systemctl enable lightdm
-su -c rc-update add lightdm boot
+sudo systemctl enable lightdm
+sudo -c rc-update add lightdm boot
+doas systemctl enable lightdm
+doas -c rc-update add lightdm boot
 echo Lightdm installed succesfully!
 #End
 
