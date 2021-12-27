@@ -159,8 +159,20 @@ su -c rc-update add pulseaudio boot
 #Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
-yay -Syy bspwm picom polybar sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance papirus-icon-theme-git
-echo Installation complete!
+yay -Syy bspwm picom sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance papirus-icon-theme-git
+echo Bspwm Installation complete!
+
+yay -S pkg-config libuv cairo libxcb python3 xcb-proto xcb-util-image xcb-util-wm python-sphinx python-packaging alsa-lib libpulse gcc clan
+g git cmake jsoncpp
+git clone --recursive https://github.com/polybar/polybar
+cd polybar
+mkdir build
+cmake ~/polybar
+export MAKEFLAGS="-j12"
+su -c make install
+cd
+echo Polybar Installation completed!
+
 
 #Installing required packages
 
