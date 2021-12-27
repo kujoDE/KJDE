@@ -40,6 +40,7 @@ sudo chown -R $USER:$USER ./yay
 doas chown -R $USER:$USER ./yay
 cd yay
 makepkg -si
+doas yay -R sudo
 
 #Yes/No yoinked from stackoverflow
 mkdir ~/.config
@@ -152,10 +153,16 @@ yay  --noconfirm -Sy
 
 
 #Adding audio on startup
-su -c systemctl enable pulseaudio
-su -c systemctl start pulseaudio
-su -c rc-service pulseaudio start
-su -c rc-update add pulseaudio boot
+sudo systemctl enable pulseaudio
+sudo systemctl start pulseaudio
+sudo rc-service pulseaudio start
+sudo rc-update add pulseaudio boot
+
+doas systemctl enable pulseaudio
+doas systemctl start pulseaudio
+doas rc-service pulseaudio start
+doas rc-update add pulseaudio boot
+
 #Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
