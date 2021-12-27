@@ -10,7 +10,7 @@ How to install:
 3. Install and configure [sudo](https://wiki.archlinux.org/title/Sudo) </a> or [doas](https://wiki.archlinux.org/title/Doas) (doas recommended)
 4. Ensure you are connected to the Internet (`ping artixlinux.org`)
 5. Install bash and curl packets (`doas pacman -Syu bash wget`)
-6. Execute install commands `wget dl.kjde.tk -o kjde-install.sh`, `chmod +x kjde-install.sh`, `bash kjde-install.sh`.
+6. Execute install commands `wget dl.kjde.tk -O kjde-install.sh`, `chmod +x kjde-install.sh`, `bash kjde-install.sh`.
 7. Enter password when prompted, wait until it finish
 8. Reboot
 
