@@ -23,6 +23,7 @@ echo -e "${RED}!IMPORTANT! ${WH}CONFIGURE SUDO/DOAS BEFORE INSTALLING! THE SCRIP
 echo -e "${RED}!IMPORTANT! ${WH}Ignore error command not found sudo/doas if you have one of those programs installed! (btw lazy devs)                ${RED}!IMPORTANT!"
 echo -e "${RED}!IMPORTANT! ${WH}Only systemd and openrc are supported by us! If you have another innit, you will need to enable audio by yourself!   ${RED}!IMPORTANT!"
 echo -e "${RED}!IMPORTANT! ${WH}If GTK theme haven't applied after installation use lxappearance to set it manually!                                 ${RED}!IMPORTANT!"
+echo -e "${RED}!IMPORTANT! ${WH}Packages with * star mark are shipped with ready configs!                                                            ${RED}!IMPORTANT!" 
 echo 
 echo -e "${ORG}-------------------------------------------------------------------------------------------------------------------------------------------"
 echo
@@ -59,7 +60,11 @@ mkdir ~/.config
 mkdir ~/Pictures
 mkdir ~/.themes
 mkdir ~/Documents
+mkdir ~/Documents/scripts
+mkdir ~/Documents/make
+cp ~/KJDE/dotfiles/polybar.sh ~/Documents/scripts/polybar.sh
 mkdir ~/Downloads
+
 
 #Creating directories
 #.config for configs
@@ -109,7 +114,7 @@ echo
 echo
 echo "${RED}done"
 echo
-                        read -p "Which terminal emulator would you like to install? alacritty (12), st (13), kitty (14), xfce4-termianl (15), none (16)   " TERMINAL
+                        read -p "Which terminal emulator would you like to install? alacritty* (12), st (13), kitty (14), xfce4-terminal* (15), none (16)   " TERMINAL
                             case $TERMINAL in
                                         12 ) yay  --noconfirm -S alacritty; break;;
                                         13 ) yay  --noconfirm -S st; break;;
@@ -162,7 +167,7 @@ echo
 echo "${RED}done"
 echo
 
-                        read -p "Which text editor would you like to install? Nano (28), Vim (29), Emacs (30), Gedit (31), none (32)  " TEXT
+                        read -p "Which text editor would you like to install? Nano (28), Vim* (29), Emacs (30), Gedit (31), none (32)  " TEXT
                             case $TEXT in
                                         28 ) yay -S nano; break;;
                                         29 ) yay -S vim; break;;

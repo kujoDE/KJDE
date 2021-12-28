@@ -10,26 +10,31 @@ alt + t
 alt + f
 	pcmanfm
 
+# powermenu
+alt + Escape
+	sh ~/.config/rofi/applets/menu/powermenu.sh
+
+# time
+alt + q
+	sh ~/.config/rofi/applets/menu/time.sh
+
+# screenshot
+alt + s
+	sh ~/.config/rofi/applets/menu/screenshot.sh
+
+
 # spotify
 alt + x
 	LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify
 
 # program launcher
 super + d
-	dmenu_run -nf white
+	sh ~/.config/rofi/launchers/colorful/launcher.sh
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 	
-# screenshots
-alt + s
-	scrot
-
-# screenshots
-super + alt + s
-	scrot -s
-
 # resollution fix
 alt + 2
 	xrandr --output HDMI-0 --mode 2560x1440 --rate 120.00
