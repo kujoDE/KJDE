@@ -2,6 +2,8 @@
 ## Kujonello's Desktop Environment (works) [WIP]
 
 KJDE automatic installation for arch based distros
+Debian version comming soon!
+
 SystemD and OpenRC supported! (for other innit systems you will need to start some services by yourself)
 
 How to install:
@@ -21,8 +23,8 @@ How to install:
 ![previe3](preview3.png)
 
 </details>
-If something doesn't work dm us on discord:
+If something doesn't work, dm us on discord:
 Kujonello#3793,
 uQlel#9256
 
-NOTE: Polybar is bugged, it's AUR's problem ;(
+NOTE: Polybar is bugged, it's AUR's problem, so KJDE will compile it from source 
