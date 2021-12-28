@@ -209,7 +209,7 @@ echo
 #Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
-yay -Syy bspwm picom sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance papirus-icon-theme-git
+yay -Syy bspwm picom sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance papirus-icon-theme-git scrot rofi
 echo 
 echo -e "${RED}Bspwm Installation complete!"
 echo
