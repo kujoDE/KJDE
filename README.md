@@ -21,7 +21,11 @@ How to install:
 ![preview](preview.png)
 ![preview2](preview2.png)
 ![previe3](preview3.png)
-
+![previe4](preview4.png)
+![previe5](preview5.png)
+![previe6](preview6.png)
+![previe7](preview7.png)
+  
 </details>
 If something doesn't work, dm us on discord:
 Kujonello#3793,
