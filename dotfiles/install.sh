@@ -5,7 +5,7 @@
 
 # colors
 RED='\033[0;31m'
-WH='\033[1,27m'
+WH='\033[1;27m'
 ORG='\033[0;33m'
 GRN='\033[0;32m'
 
@@ -28,7 +28,8 @@ echo
 echo -e "${ORG}-------------------------------------------------------------------------------------------------------------------------------------------"
 echo
 echo -e "${GRN}Github.com/kujoDE/KJDE"
-
+echo
+echo "0"
 
 
 while true; do
@@ -65,7 +66,6 @@ mkdir ~/Documents/make
 cp ~/KJDE/dotfiles/polybar.sh ~/Documents/scripts/polybar.sh
 mkdir ~/Downloads
 
-
 #Creating directories
 #.config for configs
 #Pictures for wallpapers (after install you can change it in ~/.config/bspwm/bspwmrc/
@@ -73,9 +73,7 @@ mkdir ~/Downloads
 yay  --noconfirm -Sy
 
 #Updating repositories
-echo
-echo "${RED}done"
-echo
+
                         read -p "Do you want to install pipewire(1) or pulseaudio(2)? If you dont want to have audio pick (0)! 0/1/2   " AUDIO
                             case $AUDIO in
 			                0 ) echo -e "${RED}hardcore option btw, respect"; break;;
@@ -209,7 +207,7 @@ echo
 #Pipewire is initialized in kjde.sh 
 
 echo Installing window manager, app launcher, xorg etc.
-yay -Syy bspwm picom sxhkd xorg xorg-xinit dmenu feh graphite-gtk-theme lxappearance papirus-icon-theme-git scrot rofi
+yay -Syy bspwm picom sxhkd xorg xorg-xinit dmenu feh lxappearance lxsession papirus-icon-theme-git scrot rofi
 echo 
 echo -e "${RED}Bspwm Installation complete!"
 echo
@@ -281,3 +279,4 @@ echo Lightdm installed succesfully!
 
 
 #End
+echo "${WH}done"
