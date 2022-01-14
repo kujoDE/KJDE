@@ -6,6 +6,8 @@ Debian version comming soon!
 
 SystemD and OpenRC supported! (for other innit systems you will need to start some services by yourself)
 
+If you don't like rounded bar/don't have monitor that supports 1440p (rounded bar is writen for that exact resolution) use config.alternate for polybar!
+
 How to install:
 1.  Install arch-based distro without GUI (<a href="https://artixlinux.org">Artix Linux </a> is recommended)
 2.   Login as your user
